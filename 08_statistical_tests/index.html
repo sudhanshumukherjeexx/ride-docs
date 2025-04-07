@@ -530,6 +530,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="🔍 Summary Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Reading
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -711,6 +726,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="🔍 Summary Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recommended-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Reading
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -741,6 +771,22 @@
 <li>Normality of distributions</li>
 </ul>
 <p>Users can choose from <strong>6 popular tests</strong> depending on data type, assumptions, and goals.</p>
+<p><code>Recommended Reading</code></p>
+<ul>
+<li>Blog: <a href="https://www.originlab.com/doc/Origin-Help/tTest-TwoSample">Two-Sample T-Test</a></li>
+<li>Blog: <a href="https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test">The Two-Sample t-Test</a></li>
+<li>Blog: <a href="https://www.statology.org/two-sample-t-test/">Two Sample t-test: Definition, Formula, and Example</a></li>
+<li>Blog: <a href="https://www.resonio.com/market-research/analysis-of-variance-anova/">Analysis of Variance (ANOVA) Guide with Examples</a></li>
+<li>Blog: <a href="https://stattrek.com/tutorials/anova-tutorial">Analysis of Variance Tutorial</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/chi-square-test">Chi-Square test</a></li>
+<li>Blog: <a href="https://www.scribbr.com/statistics/chi-square-tests/">Chi-Square (Χ²) Tests | Types, Formula &amp; Examples</a></li>
+<li>Blog: <a href="https://www.scribbr.com/statistics/chi-square-test-of-independence/">Chi-Square Test of Independence | Formula, Guide &amp; Examples</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/mann-whitney-u-test">Mann-Whitney U-Test</a></li>
+<li>Blog: <a href="https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf">The Mann-Whitney U Test</a></li>
+<li>Blog: <a href="https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html">How to Conduct a Wilcoxon Signed Rank Test</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/wilcoxon-test">Wilcoxon signed-rank test</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/kruskal-wallis-test">Kruskal-Wallis-Test</a></li>
+</ul>
 <hr />
 <h3 id="user-workflow">🧭 <strong>User Workflow</strong></h3>
 <ol>
@@ -783,13 +829,20 @@
 <ul>
 <li><strong>Purpose</strong>: Compares means of two independent groups.</li>
 <li><strong>Assumptions</strong>: Normal distribution, equal variances.<ul>
-<li><strong>Formula</strong> $t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$</li>
-<li>$\bar{x}_1$ and $\bar{x}_2$ are the sample means</li>
-<li>$s_1^2$ and $s_2^2$ are the sample variances</li>
-<li>$n_1$ and $n_2$ are the sample sizes</li>
+<li><strong>Formula</strong> <span class="arithmatex">\(t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}\)</span></li>
+<li><span class="arithmatex">\(\bar{x}_1\)</span> and <span class="arithmatex">\(\bar{x}_2\)</span> are the sample means</li>
+<li><span class="arithmatex">\(s_1^2\)</span> and <span class="arithmatex">\(s_2^2\)</span> are the sample variances</li>
+<li><span class="arithmatex">\(n_1\)</span> and <span class="arithmatex">\(n_2\)</span> are the sample sizes</li>
 </ul>
 </li>
-<li><strong>Example</strong>: Compare exam scores between two sections of students.</li>
+<li>
+<p><strong>Example</strong>: Compare exam scores between two sections of students.</p>
+</li>
+<li>
+<p><a href="https://www.originlab.com/doc/Origin-Help/tTest-TwoSample">Two-Sample T-Test</a></p>
+</li>
+<li><a href="https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test">The Two-Sample t-Test</a></li>
+<li><a href="https://www.statology.org/two-sample-t-test/">Two Sample t-test: Definition, Formula, and Example</a></li>
 </ul>
 <hr />
 <h3 id="2-anova-analysis-of-variance"><strong>2. ANOVA (Analysis of Variance)</strong></h3>
@@ -797,13 +850,21 @@
 <li><strong>Purpose</strong>: Compares means of <strong>3 or more</strong> independent groups.</li>
 <li><strong>Assumptions</strong>: Normal distribution, equal variances.</li>
 <li><strong>Formula</strong>:<ul>
-<li>$$F = \frac{\text{Between-group variance}}{\text{Within-group variance}} = \frac{MS_{between}}{MS_{within}}$$</li>
-<li>The $F$-statistic compares $MS_{between}$ to $MS_{within}$</li>
-<li>$MS_{between}$ represents the between-group variance</li>
-<li>$MS_{within}$ represents the within-group variance</li>
+<li>
+<div class="arithmatex">\[F = \frac{\text{Between-group variance}}{\text{Within-group variance}} = \frac{MS_{between}}{MS_{within}}\]</div>
+</li>
+<li>The <span class="arithmatex">\(F\)</span>-statistic compares <span class="arithmatex">\(MS_{between}\)</span> to <span class="arithmatex">\(MS_{within}\)</span></li>
+<li><span class="arithmatex">\(MS_{between}\)</span> represents the between-group variance</li>
+<li><span class="arithmatex">\(MS_{within}\)</span> represents the within-group variance</li>
 </ul>
 </li>
-<li><strong>Example</strong>: Compare customer satisfaction across 4 product lines.</li>
+<li>
+<p><strong>Example</strong>: Compare customer satisfaction across 4 product lines.</p>
+</li>
+<li>
+<p><a href="https://www.resonio.com/market-research/analysis-of-variance-anova/">Analysis of Variance (ANOVA) Guide with Examples</a></p>
+</li>
+<li><a href="https://stattrek.com/tutorials/anova-tutorial">Analysis of Variance Tutorial</a></li>
 </ul>
 <hr />
 <h3 id="3-chi-square-test"><strong>3. Chi-Square Test</strong></h3>
@@ -811,11 +872,18 @@
 <li><strong>Purpose</strong>: Tests for independence between two categorical variables.</li>
 <li><strong>Assumptions</strong>: Expected frequencies ≥ 5.<ul>
 <li><strong>Formula</strong>:
-$$\chi^2 = \sum \frac{(O - E)^2}{E}$$</li>
+<span class="arithmatex">\(\chi^2 = \sum \frac{(O - E)^2}{E}\)</span></li>
 </ul>
 </li>
-<li>where $O$ is observed frequency, $E$ is expected frequency.</li>
-<li><strong>Example</strong>: Test if gender and preferred drink are related.</li>
+<li>where <span class="arithmatex">\(O\)</span> is observed frequency, <span class="arithmatex">\(E\)</span> is expected frequency.</li>
+<li>
+<p><strong>Example</strong>: Test if gender and preferred drink are related.</p>
+</li>
+<li>
+<p><a href="https://datatab.net/tutorial/chi-square-test">Chi-Square test</a></p>
+</li>
+<li><a href="https://www.scribbr.com/statistics/chi-square-tests/">Chi-Square (Χ²) Tests | Types, Formula &amp; Examples</a></li>
+<li><a href="https://www.scribbr.com/statistics/chi-square-test-of-independence/">Chi-Square Test of Independence | Formula, Guide &amp; Examples</a></li>
 </ul>
 <hr />
 <h3 id="4-mann-whitney-u-test"><strong>4. Mann-Whitney U Test</strong></h3>
@@ -823,11 +891,17 @@ $$\chi^2 = \sum \frac{(O - E)^2}{E}$$</li>
 <li><strong>Purpose</strong>: Non-parametric alternative to T-test (for non-normal data).</li>
 <li><strong>Assumptions</strong>: Independent samples, ordinal/numeric values.</li>
 <li><strong>Formula</strong>:<br />
-$$U = n_1 n_2 + \frac{n_1(n_1+1)}{2} - R_1$$  <ul>
-<li>where $R_1$ is the sum of ranks in group 1.</li>
+<span class="arithmatex">\(U = n_1 n_2 + \frac{n_1(n_1+1)}{2} - R_1\)</span>  <ul>
+<li>where <span class="arithmatex">\(R_1\)</span> is the sum of ranks in group 1.</li>
 </ul>
 </li>
-<li><strong>Example</strong>: Compare ratings of two movies.</li>
+<li>
+<p><strong>Example</strong>: Compare ratings of two movies.</p>
+</li>
+<li>
+<p><a href="https://datatab.net/tutorial/mann-whitney-u-test">Mann-Whitney U-Test</a></p>
+</li>
+<li><a href="https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf">The Mann-Whitney U Test</a></li>
 </ul>
 <hr />
 <h3 id="5-wilcoxon-signed-rank-test"><strong>5. Wilcoxon Signed-Rank Test</strong></h3>
@@ -835,11 +909,17 @@ $$U = n_1 n_2 + \frac{n_1(n_1+1)}{2} - R_1$$  <ul>
 <li><strong>Purpose</strong>: Non-parametric test for <strong>paired</strong> data.</li>
 <li><strong>Assumptions</strong>: Symmetric distribution of differences.</li>
 <li>Formula <strong>Wilcoxon Signed-Rank Test</strong>
-$$W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$$<ul>
-<li>where $R_i$ is the rank of the absolute difference, and $sgn()$ is the sign function.</li>
+<span class="arithmatex">\(W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]\)</span><ul>
+<li>where <span class="arithmatex">\(R_i\)</span> is the rank of the absolute difference, and <span class="arithmatex">\(sgn()\)</span> is the sign function.</li>
 </ul>
 </li>
-<li><strong>Example</strong>: Compare before/after treatment scores for same patients.</li>
+<li>
+<p><strong>Example</strong>: Compare before/after treatment scores for same patients.</p>
+</li>
+<li>
+<p><a href="https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html">How to Conduct a Wilcoxon Signed Rank Test</a></p>
+</li>
+<li><a href="https://datatab.net/tutorial/wilcoxon-test">Wilcoxon signed-rank test</a></li>
 </ul>
 <hr />
 <h3 id="6-kruskal-wallis-h-test"><strong>6. Kruskal-Wallis H Test</strong></h3>
@@ -847,11 +927,18 @@ $$W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$$<ul>
 <li><strong>Purpose</strong>: Non-parametric ANOVA (3+ groups, not normally distributed).</li>
 <li><strong>Kruskal-Wallis H Test</strong></li>
 <li><strong>Formula</strong>:</li>
-<li>$$H = \frac{12}{n(n+1)} \sum \frac{R_i^2}{n_i} - 3(n+1)$$<ul>
-<li>where $R_i$ is the sum of ranks in group $i$, $n_i$ is the sample size of group $i$, and $n$ is the total sample size.</li>
+<li>
+<div class="arithmatex">\[H = \frac{12}{n(n+1)} \sum \frac{R_i^2}{n_i} - 3(n+1)\]</div>
+<ul>
+<li>where <span class="arithmatex">\(R_i\)</span> is the sum of ranks in group <span class="arithmatex">\(i\)</span>, <span class="arithmatex">\(n_i\)</span> is the sample size of group <span class="arithmatex">\(i\)</span>, and <span class="arithmatex">\(n\)</span> is the total sample size.</li>
 </ul>
 </li>
-<li><strong>Example</strong>: Compare time spent on app across multiple age groups.</li>
+<li>
+<p><strong>Example</strong>: Compare time spent on app across multiple age groups.</p>
+</li>
+<li>
+<p><a href="https://datatab.net/tutorial/kruskal-wallis-test">Kruskal-Wallis-Test</a></p>
+</li>
 </ul>
 <hr />
 <h2 id="summary-table">🔍 Summary Table</h2>
@@ -910,6 +997,23 @@ $$W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$$<ul>
 </tr>
 </tbody>
 </table>
+<hr />
+<h3 id="recommended-reading">Recommended Reading</h3>
+<ul>
+<li>Blog: <a href="https://www.originlab.com/doc/Origin-Help/tTest-TwoSample">Two-Sample T-Test</a></li>
+<li>Blog: <a href="https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test">The Two-Sample t-Test</a></li>
+<li>Blog: <a href="https://www.statology.org/two-sample-t-test/">Two Sample t-test: Definition, Formula, and Example</a></li>
+<li>Blog: <a href="https://www.resonio.com/market-research/analysis-of-variance-anova/">Analysis of Variance (ANOVA) Guide with Examples</a></li>
+<li>Blog: <a href="https://stattrek.com/tutorials/anova-tutorial">Analysis of Variance Tutorial</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/chi-square-test">Chi-Square test</a></li>
+<li>Blog: <a href="https://www.scribbr.com/statistics/chi-square-tests/">Chi-Square (Χ²) Tests | Types, Formula &amp; Examples</a></li>
+<li>Blog: <a href="https://www.scribbr.com/statistics/chi-square-test-of-independence/">Chi-Square Test of Independence | Formula, Guide &amp; Examples</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/mann-whitney-u-test">Mann-Whitney U-Test</a></li>
+<li>Blog: <a href="https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf">The Mann-Whitney U Test</a></li>
+<li>Blog: <a href="https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html">How to Conduct a Wilcoxon Signed Rank Test</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/wilcoxon-test">Wilcoxon signed-rank test</a></li>
+<li>Blog: <a href="https://datatab.net/tutorial/kruskal-wallis-test">Kruskal-Wallis-Test</a></li>
+</ul>
 
 
 
@@ -962,6 +1066,12 @@ $$W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$$<ul>
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -811,17 +811,17 @@
 <tbody>
 <tr>
 <td><strong>R²</strong></td>
-<td>$R^2 = 1 - \frac{SS_{res}}{SS_{tot}}$</td>
+<td><span class="arithmatex">\(R^2 = 1 - \frac{SS_{res}}{SS_{tot}}\)</span></td>
 <td>Measures the proportion of variance explained by the model. Values range from 0 to 1, with higher values indicating better fit. An R² of 0.7 means 70% of the outcome variation is explained by the model.</td>
 </tr>
 <tr>
 <td><strong>Adjusted R²</strong></td>
-<td>$1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$</td>
+<td><span class="arithmatex">\(1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}\)</span></td>
 <td>Modified version of R² that penalizes for adding unnecessary predictors. Prevents overfitting by accounting for model complexity. Always lower than R², and may decrease when irrelevant features are added.</td>
 </tr>
 <tr>
 <td><strong>RMSE</strong></td>
-<td>$\sqrt{\frac{1}{n} \sum (y_i - \hat{y}_i)^2}$</td>
+<td><span class="arithmatex">\(\sqrt{\frac{1}{n} \sum (y_i - \hat{y}_i)^2}\)</span></td>
 <td>Root Mean Square Error measures the average prediction error in the same units as the dependent variable. Lower values indicate better fit. Useful for understanding practical significance of model errors and comparing models with the same target variable.</td>
 </tr>
 </tbody>
@@ -839,17 +839,17 @@
 <tbody>
 <tr>
 <td><strong>Accuracy</strong></td>
-<td>$\frac{TP + TN}{TP + TN + FP + FN}$</td>
+<td><span class="arithmatex">\(\frac{TP + TN}{TP + TN + FP + FN}\)</span></td>
 <td>Measures the proportion of correctly classified instances (both positive and negative). Simple but potentially misleading with imbalanced datasets. A 99% accuracy could mean simply predicting the majority class in a dataset with 99:1 class ratio.</td>
 </tr>
 <tr>
 <td><strong>Balanced Accuracy</strong></td>
-<td>$\frac{1}{2} \left( \frac{TP}{TP + FN} + \frac{TN}{TN + FP} \right)$</td>
+<td><span class="arithmatex">\(\frac{1}{2} \left( \frac{TP}{TP + FN} + \frac{TN}{TN + FP} \right)\)</span></td>
 <td>Average of sensitivity and specificity, giving equal weight to both classes regardless of their size. Better for imbalanced datasets as it prevents models from achieving high scores by simply predicting the majority class.</td>
 </tr>
 <tr>
 <td><strong>F1 Score</strong></td>
-<td>$2 \cdot \frac{precision \cdot recall}{precision + recall} = \frac{2TP}{2TP + FP + FN}$</td>
+<td><span class="arithmatex">\(2 \cdot \frac{precision \cdot recall}{precision + recall} = \frac{2TP}{2TP + FP + FN}\)</span></td>
 <td>Harmonic mean of precision and recall, balancing both false positives and false negatives. Particularly useful when class imbalance exists and both false positives and negatives have significant consequences. Values range from 0 to 1.</td>
 </tr>
 <tr>
@@ -935,6 +935,12 @@
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

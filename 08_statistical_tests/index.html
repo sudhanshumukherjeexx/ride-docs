@@ -1,0 +1,968 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="No-code Data Science Tool Documentation">
+      
+      
+        <meta name="author" content="Sudhanshu Mukherjee">
+      
+      
+      
+        <link rel="prev" href="../07_distribution_diagnostics/">
+      
+      
+        <link rel="next" href="../09_automl/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>08 – Statistical Tests - RIDE User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ride-user-manual-panel-8-statistical-tests" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RIDE User Documentation" class="md-header__button md-logo" aria-label="RIDE User Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RIDE User Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              08 – Statistical Tests
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RIDE User Documentation" class="md-nav__button md-logo" aria-label="RIDE User Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RIDE User Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_data_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    01 – Data Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_data_cleanup_and_conversion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    02 – Data Cleanup & Conversion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_exploratory_data_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03 – Exploratory Data Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_impute_missing_values/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    04 – Impute Missing Values
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_feature_encoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    05 – Feature Encoding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_feature_scaling_and_transformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    06 – Feature Scaling & Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_distribution_diagnostics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    07 – Distribution Diagnostics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    08 – Statistical Tests
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    08 – Statistical Tests
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ride-user-manual-panel-8-statistical-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 RIDE User Manual – Panel 8: Statistical Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📘 RIDE User Manual – Panel 8: Statistical Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-of-the-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Purpose of the Panel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 User Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-test-explanations-with-formulas-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Statistical Test Explanations with Formulas &amp; Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-sample-t-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 2-Sample T-Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-anova-analysis-of-variance" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ANOVA (Analysis of Variance)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-chi-square-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Chi-Square Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-mann-whitney-u-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Mann-Whitney U Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-wilcoxon-signed-rank-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Wilcoxon Signed-Rank Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-kruskal-wallis-h-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Kruskal-Wallis H Test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_automl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    09 – AutoML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_chat_with_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10 – Chat with Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ride-user-manual-panel-8-statistical-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 RIDE User Manual – Panel 8: Statistical Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📘 RIDE User Manual – Panel 8: Statistical Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-of-the-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Purpose of the Panel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 User Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-test-explanations-with-formulas-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Statistical Test Explanations with Formulas &amp; Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-sample-t-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 2-Sample T-Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-anova-analysis-of-variance" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ANOVA (Analysis of Variance)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-chi-square-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Chi-Square Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-mann-whitney-u-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Mann-Whitney U Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-wilcoxon-signed-rank-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Wilcoxon Signed-Rank Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-kruskal-wallis-h-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Kruskal-Wallis H Test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>08 – Statistical Tests</h1>
+
+<h2 id="ride-user-manual-panel-8-statistical-tests">📘 RIDE User Manual – Panel 8: <strong>Statistical Tests</strong></h2>
+<hr />
+<h3 id="purpose-of-the-panel">📊 <strong>Purpose of the Panel</strong></h3>
+<p>The <strong>Statistical Tests panel</strong> allows users to run hypothesis tests on their data to determine:</p>
+<ul>
+<li>Differences between groups</li>
+<li>Associations between categorical variables</li>
+<li>Normality of distributions</li>
+</ul>
+<p>Users can choose from <strong>6 popular tests</strong> depending on data type, assumptions, and goals.</p>
+<hr />
+<h3 id="user-workflow">🧭 <strong>User Workflow</strong></h3>
+<ol>
+<li>
+<p><strong>Upload Dataset</strong><br />
+    Choose from:</p>
+<ul>
+<li>Initial DataFrame</li>
+<li>Imputed, Encoded, or Scaled DataFrame</li>
+</ul>
+</li>
+<li>
+<p><strong>Choose a Statistical Test</strong><br />
+    Options include:</p>
+<ul>
+<li>2-Sample T-Test</li>
+<li>ANOVA</li>
+<li>Chi-Square Test</li>
+<li>Mann-Whitney U Test</li>
+<li>Wilcoxon Signed-Rank Test</li>
+<li>Kruskal-Wallis Test</li>
+</ul>
+</li>
+<li>
+<p><strong>Select Group &amp; Value Columns</strong><br />
+    Based on the test chosen, select a categorical column (for grouping) and a numerical column (for values).</p>
+</li>
+<li>
+<p><strong>Visualize Distributions</strong> <em>(Optional)</em><br />
+    Choose to view histograms, box plots, or group distributions.</p>
+</li>
+<li>
+<p><strong>Run the Test</strong><br />
+    Get test statistics, p-values, interpretation, and AI-generated summaries if OpenAI API is enabled.</p>
+</li>
+</ol>
+<hr />
+<h3 id="statistical-test-explanations-with-formulas-use-cases">🧪 Statistical Test Explanations with Formulas &amp; Use Cases</h3>
+<h3 id="1-2-sample-t-test"><strong>1. 2-Sample T-Test</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Compares means of two independent groups.</li>
+<li><strong>Assumptions</strong>: Normal distribution, equal variances.<ul>
+<li><strong>Formula</strong> $t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$</li>
+<li>$\bar{x}_1$ and $\bar{x}_2$ are the sample means</li>
+<li>$s_1^2$ and $s_2^2$ are the sample variances</li>
+<li>$n_1$ and $n_2$ are the sample sizes</li>
+</ul>
+</li>
+<li><strong>Example</strong>: Compare exam scores between two sections of students.</li>
+</ul>
+<hr />
+<h3 id="2-anova-analysis-of-variance"><strong>2. ANOVA (Analysis of Variance)</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Compares means of <strong>3 or more</strong> independent groups.</li>
+<li><strong>Assumptions</strong>: Normal distribution, equal variances.</li>
+<li><strong>Formula</strong>:<ul>
+<li>$$F = \frac{\text{Between-group variance}}{\text{Within-group variance}} = \frac{MS_{between}}{MS_{within}}$$</li>
+<li>The $F$-statistic compares $MS_{between}$ to $MS_{within}$</li>
+<li>$MS_{between}$ represents the between-group variance</li>
+<li>$MS_{within}$ represents the within-group variance</li>
+</ul>
+</li>
+<li><strong>Example</strong>: Compare customer satisfaction across 4 product lines.</li>
+</ul>
+<hr />
+<h3 id="3-chi-square-test"><strong>3. Chi-Square Test</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Tests for independence between two categorical variables.</li>
+<li><strong>Assumptions</strong>: Expected frequencies ≥ 5.<ul>
+<li><strong>Formula</strong>:
+$$\chi^2 = \sum \frac{(O - E)^2}{E}$$</li>
+</ul>
+</li>
+<li>where $O$ is observed frequency, $E$ is expected frequency.</li>
+<li><strong>Example</strong>: Test if gender and preferred drink are related.</li>
+</ul>
+<hr />
+<h3 id="4-mann-whitney-u-test"><strong>4. Mann-Whitney U Test</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Non-parametric alternative to T-test (for non-normal data).</li>
+<li><strong>Assumptions</strong>: Independent samples, ordinal/numeric values.</li>
+<li><strong>Formula</strong>:<br />
+$$U = n_1 n_2 + \frac{n_1(n_1+1)}{2} - R_1$$  <ul>
+<li>where $R_1$ is the sum of ranks in group 1.</li>
+</ul>
+</li>
+<li><strong>Example</strong>: Compare ratings of two movies.</li>
+</ul>
+<hr />
+<h3 id="5-wilcoxon-signed-rank-test"><strong>5. Wilcoxon Signed-Rank Test</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Non-parametric test for <strong>paired</strong> data.</li>
+<li><strong>Assumptions</strong>: Symmetric distribution of differences.</li>
+<li>Formula <strong>Wilcoxon Signed-Rank Test</strong>
+$$W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$$<ul>
+<li>where $R_i$ is the rank of the absolute difference, and $sgn()$ is the sign function.</li>
+</ul>
+</li>
+<li><strong>Example</strong>: Compare before/after treatment scores for same patients.</li>
+</ul>
+<hr />
+<h3 id="6-kruskal-wallis-h-test"><strong>6. Kruskal-Wallis H Test</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Non-parametric ANOVA (3+ groups, not normally distributed).</li>
+<li><strong>Kruskal-Wallis H Test</strong></li>
+<li><strong>Formula</strong>:</li>
+<li>$$H = \frac{12}{n(n+1)} \sum \frac{R_i^2}{n_i} - 3(n+1)$$<ul>
+<li>where $R_i$ is the sum of ranks in group $i$, $n_i$ is the sample size of group $i$, and $n$ is the total sample size.</li>
+</ul>
+</li>
+<li><strong>Example</strong>: Compare time spent on app across multiple age groups.</li>
+</ul>
+<hr />
+<h2 id="summary-table">🔍 Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Parametric?</th>
+<th>Groups</th>
+<th>Data Type</th>
+<th>Use When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>T-Test</strong></td>
+<td>Yes</td>
+<td>2</td>
+<td>Numeric</td>
+<td>Comparing two groups (normal)</td>
+</tr>
+<tr>
+<td><strong>ANOVA</strong></td>
+<td>Yes</td>
+<td>≥3</td>
+<td>Numeric</td>
+<td>Comparing ≥3 groups (normal)</td>
+</tr>
+<tr>
+<td><strong>Chi-Square</strong></td>
+<td>No</td>
+<td>≥2</td>
+<td>Categorical</td>
+<td>Check relationships</td>
+</tr>
+<tr>
+<td><strong>Mann-Whitney U</strong></td>
+<td>No</td>
+<td>2</td>
+<td>Numeric (Ordinal)</td>
+<td>Two groups, not normal</td>
+</tr>
+<tr>
+<td><strong>Wilcoxon</strong></td>
+<td>No</td>
+<td>Paired</td>
+<td>Numeric (Ordinal)</td>
+<td>Paired samples, not normal</td>
+</tr>
+<tr>
+<td><strong>Kruskal-Wallis</strong></td>
+<td>No</td>
+<td>≥3</td>
+<td>Numeric (Ordinal)</td>
+<td>≥3 groups, not normal</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

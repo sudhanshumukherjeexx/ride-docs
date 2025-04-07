@@ -23,3 +23,12 @@ nav:
   - 08 – Statistical Tests: 08_statistical_tests.md
   - 09 – AutoML: 09_automl.md
   - 10 – Chat with Data: 10_chat_with_data.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

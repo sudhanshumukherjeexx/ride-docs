@@ -6,6 +6,12 @@
 
 This panel allows users to handle missing values in their dataset using **nine distinct strategies** ranging from simple deletion to statistical and ML-inspired methods. The goal is to maintain dataset integrity while preparing for modeling or analysis.
 
+`Recommended Reading`
+
+- Kaggle Notebook: [A Guide to Handling Missing values in Python](https://www.kaggle.com/code/parulpandey/a-guide-to-handling-missing-values-in-python)
+- Pandas Official Documentation: [Work with Missing Data](https://pandas.pydata.org/docs/user_guide/missing_data.html)
+- Blog: [Top Techniques to Handle Missing Values Every Data Scientist Should Know](https://www.datacamp.com/tutorial/techniques-to-handle-missing-data-values)
+
 ---
 ### 🧭 **User Workflow**
 
@@ -53,3 +59,11 @@ This panel allows users to handle missing values in their dataset using **nine d
 |**7. Median Imputation**|Fills with the median of the column. ✅ Better than mean for skewed data.|Use with skewed or outlier-heavy numeric features.|
 |**8. Nearest Neighbors**|Estimates missing values based on similarity to nearest rows (distance-based). ✅ Sophisticated but computationally heavier.|Use when strong similarity exists among rows.|
 |**9. Interpolation**|Fills values by interpolating between surrounding known values. ✅ Natural fit for numeric, ordered data.|Best for numeric sequences or time-series data.|
+
+---
+
+### Recommended Reading
+
+- Kaggle Notebook: [A Guide to Handling Missing values in Python](https://www.kaggle.com/code/parulpandey/a-guide-to-handling-missing-values-in-python)
+- Pandas Official Documentation: [Work with Missing Data](https://pandas.pydata.org/docs/user_guide/missing_data.html)
+- Blog: [Top Techniques to Handle Missing Values Every Data Scientist Should Know](https://www.datacamp.com/tutorial/techniques-to-handle-missing-data-values)

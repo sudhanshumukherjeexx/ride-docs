@@ -9,6 +9,15 @@ This panel allows users to **normalize, standardize, or transform features** for
 - Prevents features with larger magnitudes from dominating the model.
 - Handles skewness and non-normal distributions.
 
+`Recommended Reading`
+
+- Blog: [When to perform scaling](https://www.atoti.io/articles/when-to-perform-a-feature-scaling/#:~:text=What%20is%20Feature%20Scaling%3F,during%20the%20data%20preprocessing%20step.)
+- Blog: [About Feature Scaling and Normalization](https://sebastianraschka.com/Articles/2014_about_feature_scaling.html#:~:text=shouldn't%20hurt.-,About%20Min%2DMax%20scaling,range%20%2D%20usually%200%20to%201.)
+- Blog: [Feature Scaling: Engineering, Normalization, and Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
+- Blog: [Feature Transformation- Part of Feature Engineering](https://medium.com/@datasciencejourney100_83560/feature-transformation-part-of-feature-engineering-dff2deaf59a2)
+- Kaggle Notebook: [All about Feature Transformation](https://www.kaggle.com/code/nargisbegum82/all-about-feature-transformation)
+
+
 ---
 ### 🧭 **User Workflow**
 
@@ -58,6 +67,11 @@ This panel allows users to **normalize, standardize, or transform features** for
 | **Robust Scaler**             | Uses IQR (Q3 - Q1), ignores outliers. | When outliers are present and shouldn't dominate scaling.  |
 | **Max AbsScaler**             | Scales by max absolute value.         | When dealing with **sparse** data (e.g., TF-IDF).          |
 
+- Min-Max Scaling: [How Min-Max Scaler Works](https://medium.com/@iamkamleshrangi/how-min-max-scaler-works-9fbebb9347da)
+- Standardization(z-score): [z-Score](https://datatab.net/tutorial/z-score)
+- Robust Scaling: [Robust Scaling: Why and How to Use It to Handle Outliers](https://proclusacademy.com/blog/robust-scaler-outliers/)
+- Max AbsScaler: [Using Max Abs Scaler for feature scaling | Machine Learning](https://www.youtube.com/watch?v=RbFkTonj1lg)
+
 ### 🔄 Feature Transformation
 
 |Method|Description|Best For|
@@ -67,8 +81,20 @@ This panel allows users to **normalize, standardize, or transform features** for
 |**Power Transformer (Box-Cox)**|Normalizes data using λ parameter.|Positive-only data with non-normal shape.|
 |**Power Transformer (Yeo-Johnson)**|Modified Box-Cox, supports negatives.|Mixed-sign numeric data needing normalization.|
 
+- Quantile Transformer, Power Transformer and Log Transform: [5 Data Transformers to know from Scikit-Learn](https://medium.com/data-science/5-data-transformers-to-know-from-scikit-learn-612bc48b8c89#:~:text=Quantile%20Transformer,Gaussian%20Distribution%20(Normal%20Distribution)) 
+
 ---
 ## 🧠 Why This Panel Matters
 
 - Scaling ensures model **convergence** and **fair weight distribution**.
 - Transformation can reduce **skewness** and make data more **Gaussian**, which is preferred by many statistical and ML models.
+
+--- 
+
+### Recommended Reading
+
+- Blog: [When to perform scaling](https://www.atoti.io/articles/when-to-perform-a-feature-scaling/#:~:text=What%20is%20Feature%20Scaling%3F,during%20the%20data%20preprocessing%20step.)
+- Blog: [About Feature Scaling and Normalization](https://sebastianraschka.com/Articles/2014_about_feature_scaling.html#:~:text=shouldn't%20hurt.-,About%20Min%2DMax%20scaling,range%20%2D%20usually%200%20to%201.)
+- Blog: [Feature Scaling: Engineering, Normalization, and Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
+- Blog: [Feature Transformation- Part of Feature Engineering](https://medium.com/@datasciencejourney100_83560/feature-transformation-part-of-feature-engineering-dff2deaf59a2)
+- Kaggle Notebook: [All about Feature Transformation](https://www.kaggle.com/code/nargisbegum82/all-about-feature-transformation)

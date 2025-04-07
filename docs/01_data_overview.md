@@ -6,6 +6,10 @@
 
 The **Data Overview panel** is designed to give users an instant, interactive understanding of their dataset. It provides descriptive statistics, data types, shape, missing value counts, and correlation analysis—all wrapped with optional AI-driven explanations.
 
+`Recommended Reading`
+
+- Blog: [A Gentle Introduction to Python’s Pandas Library — The First 5 Functions You Need to Know](https://medium.com/learning-data/a-gentle-introduction-to-pythons-pandas-library-the-first-5-functions-you-need-to-know-fc045e24f3c8)
+
 ---
 
 ### 🧭 **User Workflow**
@@ -68,3 +72,9 @@ The **Data Overview panel** is designed to give users an instant, interactive un
     - Feature relationships
         
 - **Image-based GPT analysis** of the correlation heatmap using the `AnalyzeImage()` function.
+
+---
+
+### `Recommended Reading`
+
+- Blog: [A Gentle Introduction to Python’s Pandas Library — The First 5 Functions You Need to Know](https://medium.com/learning-data/a-gentle-introduction-to-pythons-pandas-library-the-first-5-functions-you-need-to-know-fc045e24f3c8)

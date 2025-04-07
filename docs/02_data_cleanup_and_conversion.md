@@ -10,6 +10,10 @@ This panel enables users to **clean their dataset** by:
 - Converting feature columns to appropriate data types  
     These preprocessing steps are crucial for maintaining data quality and preparing datasets for deeper analysis or modeling.
 
+`Recommended Reading`
+
+- Blog: [Handling Duplicate values](https://medium.com/@ayushmandurgapal/handling-duplicate-values-and-outliers-in-a-dataset-b00ce130818e)
+
 ---
 ### 🧭 **User Workflow**
 
@@ -61,3 +65,8 @@ This panel enables users to **clean their dataset** by:
     - Tries multiple common date formats.
         
     - Uses `polars.str.to_datetime()` with fallback parsing.
+
+
+### Recommended Reading
+
+- Blog: [Handling Duplicate values](https://medium.com/@ayushmandurgapal/handling-duplicate-values-and-outliers-in-a-dataset-b00ce130818e)

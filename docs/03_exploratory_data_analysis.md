@@ -5,6 +5,12 @@
 
 The **EDA Panel** helps users visualize patterns, distributions, and relationships in their data using a suite of 15+ interactive plot types. These visuals make it easier to understand underlying structures before performing modeling or transformation.
 
+`Recommended Reading`
+
+- Blog: [How to choose the right data visualization](https://www.atlassian.com/data/charts/how-to-choose-data-visualization)
+- Blog: [A Complete Guide to Python Data Visualization](https://www.datylon.com/blog/a-complete-guide-to-python-data-visualization#:~:text=Python%20libraries%20excel%20in%20providing,like%20Pandas%20and%20NumPy%20possible.)
+- Blog: [Types of Plots: Visualization from Concept to Code](https://www.analyticsvidhya.com/blog/2021/12/12-data-plot-types-for-visualization/)
+
 ---
 ### 🧭 **User Workflow**
 
@@ -87,3 +93,11 @@ The **EDA Panel** helps users visualize patterns, distributions, and relationshi
 ### 🤖 AI Integration
 
 While this panel does not directly use GPT, it is fully compatible with previous and subsequent AI-assisted panels where generated insights complement these visualizations.
+
+---
+
+### Recommended Reading
+
+- Blog: [How to choose the right data visualization](https://www.atlassian.com/data/charts/how-to-choose-data-visualization)
+- Blog: [A Complete Guide to Python Data Visualization](https://www.datylon.com/blog/a-complete-guide-to-python-data-visualization#:~:text=Python%20libraries%20excel%20in%20providing,like%20Pandas%20and%20NumPy%20possible.)
+- Blog: [Types of Plots: Visualization from Concept to Code](https://www.analyticsvidhya.com/blog/2021/12/12-data-plot-types-for-visualization/)

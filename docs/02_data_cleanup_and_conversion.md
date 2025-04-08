@@ -12,7 +12,7 @@ This panel enables users to **clean their dataset** by:
 
 `Recommended Reading`
 
-- Blog: [Handling Duplicate values](https://medium.com/@ayushmandurgapal/handling-duplicate-values-and-outliers-in-a-dataset-b00ce130818e)
+- Blog: <a href="https://medium.com/@ayushmandurgapal/handling-duplicate-values-and-outliers-in-a-dataset-b00ce130818e" target="_blank" rel="noopener noreferrer">Handling Duplicate values</a>
 
 ---
 ### 🧭 **User Workflow**
@@ -69,4 +69,4 @@ This panel enables users to **clean their dataset** by:
 
 ### Recommended Reading
 
-- Blog: [Handling Duplicate values](https://medium.com/@ayushmandurgapal/handling-duplicate-values-and-outliers-in-a-dataset-b00ce130818e)
+- Blog: <a href="https://medium.com/@ayushmandurgapal/handling-duplicate-values-and-outliers-in-a-dataset-b00ce130818e" target="_blank" rel="noopener noreferrer">Handling Duplicate values</a>

@@ -7,6 +7,13 @@ The **AutoML Panel** helps users perform **automated machine learning** (AutoML)
 - Regression
 - Classification
 - Clustering  
+
+`Recommended Reading`
+
+- Blog: <a href="https://www.deepchecks.com/question/what-are-the-best-metrics-for-the-regression-model/" target="_blank" rel="noopener noreferrer">What are the Best Metrics for the Regression Model?</a>
+- Blog: <a href="https://medium.com/@mlmind/evaluation-metrics-for-classification-fc770511052d" target="_blank" rel="noopener noreferrer">Evaluation Metrics for Classification</a>
+
+
 ### Without writing a single line of code, users can:
 - Select a dataset
 - Pick features and a target
@@ -94,3 +101,10 @@ It integrates a powerful backend to run model pipelines, manage parallel executi
 | **Inertia**                | Sum of squared distances within clusters (used in elbow method) |
 | **Silhouette Score**       | Measures separation between clusters (ranges from -1 to 1)      |
 | **PCA Explained Variance** | Shows how much variance each principal component retains        |
+
+
+---
+### Recommended Reading
+
+- Blog: <a href="https://www.deepchecks.com/question/what-are-the-best-metrics-for-the-regression-model/" target="_blank" rel="noopener noreferrer">What are the Best Metrics for the Regression Model?</a>
+- Blog: <a href="https://medium.com/@mlmind/evaluation-metrics-for-classification-fc770511052d" target="_blank" rel="noopener noreferrer">Evaluation Metrics for Classification</a>

@@ -7,9 +7,8 @@ The **Feature Encoding panel** helps convert **categorical variables into numeri
 
 `Recommended Reading`
 
-- Blog: [Feature Encoding](https://medium.com/@denizgunay/feature-encoding-f099a6c1abe8)
-- Blog: [All you need to know about encoding techniques!](https://medium.com/anolytics/all-you-need-to-know-about-encoding-techniques-b3a0af68338b)
-
+- Blog: <a href="https://medium.com/@denizgunay/feature-encoding-f099a6c1abe8" target="_blank" rel="noopener noreferrer">Feature Encoding</a>
+- Blog: <a href="https://medium.com/anolytics/all-you-need-to-know-about-encoding-techniques-b3a0af68338b" target="_blank" rel="noopener noreferrer">All you need to know about encoding techniques!</a>
 
 ---
 ### 🧭 **User Workflow**
@@ -51,10 +50,9 @@ The **Feature Encoding panel** helps convert **categorical variables into numeri
 |**One Hot Encoding**|Creates binary columns for each category (`0` or `1`).|Nominal (unordered) data|`Color → [is_red, is_blue, is_green]`|
 |**Ordinal Encoding**|Similar to Label, but requires understanding of order.|Ordinal with meaningful rank|`Small → 1`, `Medium → 2`, `Large → 3`|
 
-- Label Encoding: [What is label encoding? Application of label encoder in machine learning and deep learning models.](https://medium.com/@sunnykumar1516/what-is-label-encoding-application-of-label-encoder-in-machine-learning-and-deep-learning-models-c593669483ed)
-- One Hot Encoding: [What Is One Hot Encoding and How to Implement It in Python](https://www.datacamp.com/tutorial/one-hot-encoding-python-tutorial)
-- Ordinal Encoding: [Ordinal Encoding — A Brief Explanation](https://medium.com/@WojtekFulmyk/ordinal-encoding-a-brief-explanation-a29cf374dbc1https://medium.com/@WojtekFulmyk/ordinal-encoding-a-brief-explanation-a29cf374dbc1)
-
+- Label Encoding: <a href="https://medium.com/@sunnykumar1516/what-is-label-encoding-application-of-label-encoder-in-machine-learning-and-deep-learning-models-c593669483ed" target="_blank" rel="noopener noreferrer">What is label encoding? Application of label encoder in machine learning and deep learning models.</a>
+- One Hot Encoding: <a href="https://www.datacamp.com/tutorial/one-hot-encoding-python-tutorial" target="_blank" rel="noopener noreferrer">What Is One Hot Encoding and How to Implement It in Python</a>
+- Ordinal Encoding: <a href="https://medium.com/@WojtekFulmyk/ordinal-encoding-a-brief-explanation-a29cf374dbc1" target="_blank" rel="noopener noreferrer">Ordinal Encoding — A Brief Explanation</a>
 ---
 ### 🔍 Why Encoding Matters
 
@@ -68,5 +66,5 @@ Most machine learning algorithms require numeric inputs. Encoding ensures:
 
 ### Recommended Reading
 
-- Blog: [Feature Encoding](https://medium.com/@denizgunay/feature-encoding-f099a6c1abe8)
-- Blog: [All you need to know about encoding techniques!](https://medium.com/anolytics/all-you-need-to-know-about-encoding-techniques-b3a0af68338b)
+- Blog: <a href="https://medium.com/@denizgunay/feature-encoding-f099a6c1abe8" target="_blank" rel="noopener noreferrer">Feature Encoding</a>
+- Blog: <a href="https://medium.com/anolytics/all-you-need-to-know-about-encoding-techniques-b3a0af68338b" target="_blank" rel="noopener noreferrer">All you need to know about encoding techniques!</a>

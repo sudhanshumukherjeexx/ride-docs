@@ -12,15 +12,15 @@ This is crucial for identifying data anomalies, choosing suitable transformation
 
 `Recommended Reading`
 
-- Blog: [The Q-Q Plot: What It Means and How to Interpret It](https://www.datacamp.com/tutorial/qq-plot)
-- Blog: [Understanding QQ Plots](https://library.virginia.edu/data/articles/understanding-q-q-plots)
-- Blog: [Kurtosis](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/kurtosis)
-- Blog: [Measures of Kurtosis and Skewness](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm#:~:text=Kurtosis%20is%20a%20measure%20of,would%20be%20the%20extreme%20case.)
-- Blog: [Right Skewed vs. Left Skewed Distribution](https://www.investopedia.com/terms/s/skewness.asp#:~:text=a%20probability%20distribution.-,What%20Is%20Skewness%3F,the%20bell%20curve%20is%20skewed.)
-- Blog: [The Complete Guide to Skewness and Kurtosis](https://www.simplilearn.com/tutorials/statistics-tutorial/skewness-and-kurtosis)
-- Blog: [What Is an Outlier?](https://careerfoundry.com/en/blog/data-analytics/what-is-an-outlier/)
-- Blog: [What are outliers in the data?](https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm#:~:text=An%20outlier%20is%20an%20observation,what%20will%20be%20considered%20abnormal.)
-- Blog: [What Are Outliers in Data Sciences?](https://www.coursera.org/articles/what-are-outliers)
+- Blog: <a href="https://www.datacamp.com/tutorial/qq-plot" target="_blank" rel="noopener noreferrer">The Q-Q Plot: What It Means and How to Interpret It</a>
+- Blog: <a href="https://library.virginia.edu/data/articles/understanding-q-q-plots" target="_blank" rel="noopener noreferrer">Understanding QQ Plots</a>
+- Blog: <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/kurtosis" target="_blank" rel="noopener noreferrer">Kurtosis</a>
+- Blog: <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm#:~:text=Kurtosis%20is%20a%20measure%20of,would%20be%20the%20extreme%20case." target="_blank" rel="noopener noreferrer">Measures of Kurtosis and Skewness</a>
+- Blog: <a href="https://www.investopedia.com/terms/s/skewness.asp#:~:text=a%20probability%20distribution.-,What%20Is%20Skewness%3F,the%20bell%20curve%20is%20skewed." target="_blank" rel="noopener noreferrer">Right Skewed vs. Left Skewed Distribution</a>
+- Blog: <a href="https://www.simplilearn.com/tutorials/statistics-tutorial/skewness-and-kurtosis" target="_blank" rel="noopener noreferrer">The Complete Guide to Skewness and Kurtosis</a>
+- Blog: <a href="https://careerfoundry.com/en/blog/data-analytics/what-is-an-outlier/" target="_blank" rel="noopener noreferrer">What Is an Outlier?</a>
+- Blog: <a href="https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm#:~:text=An%20outlier%20is%20an%20observation,what%20will%20be%20considered%20abnormal." target="_blank" rel="noopener noreferrer">What are outliers in the data?</a>
+- Blog: <a href="https://www.coursera.org/articles/what-are-outliers" target="_blank" rel="noopener noreferrer">What Are Outliers in Data Sciences?</a>
 
 
 ---
@@ -94,12 +94,12 @@ This is crucial for identifying data anomalies, choosing suitable transformation
 | **Anderson-Darling**   | Strong test across all sizes                                       | Offers critical value comparison |
 
 
-- Shapiro-Wilk Test: [Wikipedia](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)
-- Shapiro-Wilk Test: [An Introduction to the Shapiro-Wilk Test for Normality](https://builtin.com/data-science/shapiro-wilk-test)
-- Kolmogorov-Smirnov: [Wikipedia](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test)
-- Kolmogorov-Smirnov: [Interpreting results: Kolmogorov-Smirnov test](https://www.graphpad.com/guides/prism/latest/statistics/interpreting_results_kolmogorov-smirnov_test.htm)
-- Anderson-Darling Test: [Wikipedia](https://en.wikipedia.org/wiki/Anderson%E2%80%93Darling_test)
-- Anderson-Darling Test: [A Complete Guide to the Anderson-Darling Normality Test](https://www.6sigma.us/six-sigma-in-focus/anderson-darling-normality-test/)
+- Shapiro-Wilk Test: <a href="https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+- Shapiro-Wilk Test: <a href="https://builtin.com/data-science/shapiro-wilk-test" target="_blank" rel="noopener noreferrer">An Introduction to the Shapiro-Wilk Test for Normality</a>
+- Kolmogorov-Smirnov: <a href="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+- Kolmogorov-Smirnov: <a href="https://www.graphpad.com/guides/prism/latest/statistics/interpreting_results_kolmogorov-smirnov_test.htm" target="_blank" rel="noopener noreferrer">Interpreting results: Kolmogorov-Smirnov test</a>
+- Anderson-Darling Test: <a href="https://en.wikipedia.org/wiki/Anderson%E2%80%93Darling_test" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+- Anderson-Darling Test: <a href="https://www.6sigma.us/six-sigma-in-focus/anderson-darling-normality-test/" target="_blank" rel="noopener noreferrer">A Complete Guide to the Anderson-Darling Normality Test</a>
 
 ---
 ### 🧮 Outlier Detection (IQR Method)
@@ -114,12 +114,12 @@ This is crucial for identifying data anomalies, choosing suitable transformation
 
 ### Recommended Reading
 
-- Blog: [The Q-Q Plot: What It Means and How to Interpret It](https://www.datacamp.com/tutorial/qq-plot)
-- Blog: [Understanding QQ Plots](https://library.virginia.edu/data/articles/understanding-q-q-plots)
-- Blog: [Kurtosis](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/kurtosis)
-- Blog: [Measures of Kurtosis and Skewness](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm#:~:text=Kurtosis%20is%20a%20measure%20of,would%20be%20the%20extreme%20case.)
-- Blog: [Right Skewed vs. Left Skewed Distribution](https://www.investopedia.com/terms/s/skewness.asp#:~:text=a%20probability%20distribution.-,What%20Is%20Skewness%3F,the%20bell%20curve%20is%20skewed.)
-- Blog: [The Complete Guide to Skewness and Kurtosis](https://www.simplilearn.com/tutorials/statistics-tutorial/skewness-and-kurtosis)
-- Blog: [What Is an Outlier?](https://careerfoundry.com/en/blog/data-analytics/what-is-an-outlier/)
-- Blog: [What are outliers in the data?](https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm#:~:text=An%20outlier%20is%20an%20observation,what%20will%20be%20considered%20abnormal.)
-- Blog: [What Are Outliers in Data Sciences?](https://www.coursera.org/articles/what-are-outliers)
+- Blog: <a href="https://www.datacamp.com/tutorial/qq-plot" target="_blank" rel="noopener noreferrer">The Q-Q Plot: What It Means and How to Interpret It</a>
+- Blog: <a href="https://library.virginia.edu/data/articles/understanding-q-q-plots" target="_blank" rel="noopener noreferrer">Understanding QQ Plots</a>
+- Blog: <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/kurtosis" target="_blank" rel="noopener noreferrer">Kurtosis</a>
+- Blog: <a href="https://www.itl.nist.gov/div898/handbook/eda/section3/eda35b.htm#:~:text=Kurtosis%20is%20a%20measure%20of,would%20be%20the%20extreme%20case." target="_blank" rel="noopener noreferrer">Measures of Kurtosis and Skewness</a>
+- Blog: <a href="https://www.investopedia.com/terms/s/skewness.asp#:~:text=a%20probability%20distribution.-,What%20Is%20Skewness%3F,the%20bell%20curve%20is%20skewed." target="_blank" rel="noopener noreferrer">Right Skewed vs. Left Skewed Distribution</a>
+- Blog: <a href="https://www.simplilearn.com/tutorials/statistics-tutorial/skewness-and-kurtosis" target="_blank" rel="noopener noreferrer">The Complete Guide to Skewness and Kurtosis</a>
+- Blog: <a href="https://careerfoundry.com/en/blog/data-analytics/what-is-an-outlier/" target="_blank" rel="noopener noreferrer">What Is an Outlier?</a>
+- Blog: <a href="https://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm#:~:text=An%20outlier%20is%20an%20observation,what%20will%20be%20considered%20abnormal." target="_blank" rel="noopener noreferrer">What are outliers in the data?</a>
+- Blog: <a href="https://www.coursera.org/articles/what-are-outliers" target="_blank" rel="noopener noreferrer">What Are Outliers in Data Sciences?</a>

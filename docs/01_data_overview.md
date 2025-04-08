@@ -8,7 +8,7 @@ The **Data Overview panel** is designed to give users an instant, interactive un
 
 `Recommended Reading`
 
-- Blog: [A Gentle Introduction to Python’s Pandas Library — The First 5 Functions You Need to Know](https://medium.com/learning-data/a-gentle-introduction-to-pythons-pandas-library-the-first-5-functions-you-need-to-know-fc045e24f3c8)
+Blog: <a href="https://medium.com/learning-data/a-gentle-introduction-to-pythons-pandas-library-the-first-5-functions-you-need-to-know-fc045e24f3c8" target="_blank" rel="noopener noreferrer">A Gentle Introduction to Python's Pandas Library — The First 5 Functions You Need to Know</a>
 
 ---
 
@@ -75,6 +75,6 @@ The **Data Overview panel** is designed to give users an instant, interactive un
 
 ---
 
-### `Recommended Reading`
+### Recommended Reading
 
-- Blog: [A Gentle Introduction to Python’s Pandas Library — The First 5 Functions You Need to Know](https://medium.com/learning-data/a-gentle-introduction-to-pythons-pandas-library-the-first-5-functions-you-need-to-know-fc045e24f3c8)
+Blog: <a href="https://medium.com/learning-data/a-gentle-introduction-to-pythons-pandas-library-the-first-5-functions-you-need-to-know-fc045e24f3c8" target="_blank" rel="noopener noreferrer">A Gentle Introduction to Python's Pandas Library — The First 5 Functions You Need to Know</a>

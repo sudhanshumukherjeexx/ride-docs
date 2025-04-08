@@ -13,19 +13,19 @@ Users can choose from **6 popular tests** depending on data type, assumptions, a
 
 `Recommended Reading`
 
-- Blog: [Two-Sample T-Test](https://www.originlab.com/doc/Origin-Help/tTest-TwoSample)
-- Blog: [The Two-Sample t-Test](https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test)
-- Blog: [Two Sample t-test: Definition, Formula, and Example](https://www.statology.org/two-sample-t-test/)
-- Blog: [Analysis of Variance (ANOVA) Guide with Examples](https://www.resonio.com/market-research/analysis-of-variance-anova/)
-- Blog: [Analysis of Variance Tutorial](https://stattrek.com/tutorials/anova-tutorial)
-- Blog: [Chi-Square test](https://datatab.net/tutorial/chi-square-test)
-- Blog: [Chi-Square (Χ²) Tests | Types, Formula & Examples](https://www.scribbr.com/statistics/chi-square-tests/)
-- Blog: [Chi-Square Test of Independence | Formula, Guide & Examples](https://www.scribbr.com/statistics/chi-square-test-of-independence/)
-- Blog: [Mann-Whitney U-Test](https://datatab.net/tutorial/mann-whitney-u-test)
-- Blog: [The Mann-Whitney U Test](https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf)
-- Blog: [How to Conduct a Wilcoxon Signed Rank Test](https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html)
-- Blog: [Wilcoxon signed-rank test](https://datatab.net/tutorial/wilcoxon-test)
-- Blog: [Kruskal-Wallis-Test](https://datatab.net/tutorial/kruskal-wallis-test)
+- Blog: <a href="https://www.originlab.com/doc/Origin-Help/tTest-TwoSample" target="_blank" rel="noopener noreferrer">Two-Sample T-Test</a>
+- Blog: <a href="https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test" target="_blank" rel="noopener noreferrer">The Two-Sample t-Test</a>
+- Blog: <a href="https://www.statology.org/two-sample-t-test/" target="_blank" rel="noopener noreferrer">Two Sample t-test: Definition, Formula, and Example</a>
+- Blog: <a href="https://www.resonio.com/market-research/analysis-of-variance-anova/" target="_blank" rel="noopener noreferrer">Analysis of Variance (ANOVA) Guide with Examples</a>
+- Blog: <a href="https://stattrek.com/tutorials/anova-tutorial" target="_blank" rel="noopener noreferrer">Analysis of Variance Tutorial</a>
+- Blog: <a href="https://datatab.net/tutorial/chi-square-test" target="_blank" rel="noopener noreferrer">Chi-Square test</a>
+- Blog: <a href="https://www.scribbr.com/statistics/chi-square-tests/" target="_blank" rel="noopener noreferrer">Chi-Square (Χ²) Tests | Types, Formula & Examples</a>
+- Blog: <a href="https://www.scribbr.com/statistics/chi-square-test-of-independence/" target="_blank" rel="noopener noreferrer">Chi-Square Test of Independence | Formula, Guide & Examples</a>
+- Blog: <a href="https://datatab.net/tutorial/mann-whitney-u-test" target="_blank" rel="noopener noreferrer">Mann-Whitney U-Test</a>
+- Blog: <a href="https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf" target="_blank" rel="noopener noreferrer">The Mann-Whitney U Test</a>
+- Blog: <a href="https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html" target="_blank" rel="noopener noreferrer">How to Conduct a Wilcoxon Signed Rank Test</a>
+- Blog: <a href="https://datatab.net/tutorial/wilcoxon-test" target="_blank" rel="noopener noreferrer">Wilcoxon signed-rank test</a>
+- Blog: <a href="https://datatab.net/tutorial/kruskal-wallis-test" target="_blank" rel="noopener noreferrer">Kruskal-Wallis-Test</a>
 
 ---
 ### 🧭 **User Workflow**
@@ -66,9 +66,9 @@ Users can choose from **6 popular tests** depending on data type, assumptions, a
 	- $n_1$ and $n_2$ are the sample sizes
 - **Example**: Compare exam scores between two sections of students.
 
-- [Two-Sample T-Test](https://www.originlab.com/doc/Origin-Help/tTest-TwoSample)
-- [The Two-Sample t-Test](https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test)
-- [Two Sample t-test: Definition, Formula, and Example](https://www.statology.org/two-sample-t-test/)
+- <a href="https://www.originlab.com/doc/Origin-Help/tTest-TwoSample" target="_blank" rel="noopener noreferrer">Two-Sample T-Test</a>
+- <a href="https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test" target="_blank" rel="noopener noreferrer">The Two-Sample t-Test</a>
+- <a href="https://www.statology.org/two-sample-t-test/" target="_blank" rel="noopener noreferrer">Two Sample t-test: Definition, Formula, and Example</a>
 
 ---
 ### **2. ANOVA (Analysis of Variance)**
@@ -82,9 +82,8 @@ Users can choose from **6 popular tests** depending on data type, assumptions, a
 	- $MS_{within}$ represents the within-group variance
 - **Example**: Compare customer satisfaction across 4 product lines.
 
-- [Analysis of Variance (ANOVA) Guide with Examples](https://www.resonio.com/market-research/analysis-of-variance-anova/)
-- [Analysis of Variance Tutorial](https://stattrek.com/tutorials/anova-tutorial)
-
+- <a href="https://www.resonio.com/market-research/analysis-of-variance-anova/" target="_blank" rel="noopener noreferrer">Analysis of Variance (ANOVA) Guide with Examples</a>
+- <a href="https://stattrek.com/tutorials/anova-tutorial" target="_blank" rel="noopener noreferrer">Analysis of Variance Tutorial</a>
 ---
 ### **3. Chi-Square Test**
 
@@ -96,10 +95,9 @@ $\chi^2 = \sum \frac{(O - E)^2}{E}$
 - **Example**: Test if gender and preferred drink are related.
 
 
-- [Chi-Square test](https://datatab.net/tutorial/chi-square-test)
-- [Chi-Square (Χ²) Tests | Types, Formula & Examples](https://www.scribbr.com/statistics/chi-square-tests/)
-- [Chi-Square Test of Independence | Formula, Guide & Examples](https://www.scribbr.com/statistics/chi-square-test-of-independence/)
-
+- <a href="https://datatab.net/tutorial/chi-square-test" target="_blank" rel="noopener noreferrer">Chi-Square test</a>
+- <a href="https://www.scribbr.com/statistics/chi-square-tests/" target="_blank" rel="noopener noreferrer">Chi-Square (Χ²) Tests | Types, Formula & Examples</a>
+- <a href="https://www.scribbr.com/statistics/chi-square-test-of-independence/" target="_blank" rel="noopener noreferrer">Chi-Square Test of Independence | Formula, Guide & Examples</a>
 ---
 ### **4. Mann-Whitney U Test**
 
@@ -110,9 +108,8 @@ $U = n_1 n_2 + \frac{n_1(n_1+1)}{2} - R_1$
 	- where $R_1$ is the sum of ranks in group 1.
 - **Example**: Compare ratings of two movies.
 
-- [Mann-Whitney U-Test](https://datatab.net/tutorial/mann-whitney-u-test)
-- [The Mann-Whitney U Test](https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf)
-
+- <a href="https://datatab.net/tutorial/mann-whitney-u-test" target="_blank" rel="noopener noreferrer">Mann-Whitney U-Test</a>
+- <a href="https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf" target="_blank" rel="noopener noreferrer">The Mann-Whitney U Test</a>
 ---
 ### **5. Wilcoxon Signed-Rank Test**
 
@@ -123,8 +120,8 @@ $W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$
 	- where $R_i$ is the rank of the absolute difference, and $sgn()$ is the sign function.
 - **Example**: Compare before/after treatment scores for same patients.
 
-- [How to Conduct a Wilcoxon Signed Rank Test](https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html)
-- [Wilcoxon signed-rank test](https://datatab.net/tutorial/wilcoxon-test)
+- <a href="https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html" target="_blank" rel="noopener noreferrer">How to Conduct a Wilcoxon Signed Rank Test</a>
+- <a href="https://datatab.net/tutorial/wilcoxon-test" target="_blank" rel="noopener noreferrer">Wilcoxon signed-rank test</a>
 
 ---
 ### **6. Kruskal-Wallis H Test**
@@ -136,7 +133,7 @@ $W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$
 	- where $R_i$ is the sum of ranks in group $i$, $n_i$ is the sample size of group $i$, and $n$ is the total sample size.
 - **Example**: Compare time spent on app across multiple age groups.
 
-- [Kruskal-Wallis-Test](https://datatab.net/tutorial/kruskal-wallis-test)
+- <a href="https://datatab.net/tutorial/kruskal-wallis-test" target="_blank" rel="noopener noreferrer">Kruskal-Wallis-Test</a>
 
 ---
 ## 🔍 Summary Table
@@ -154,16 +151,16 @@ $W = \sum_{i=1}^{n} [sgn(x_{2,i} - x_{1,i}) \cdot R_i]$
 
 ### Recommended Reading
 
-- Blog: [Two-Sample T-Test](https://www.originlab.com/doc/Origin-Help/tTest-TwoSample)
-- Blog: [The Two-Sample t-Test](https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test)
-- Blog: [Two Sample t-test: Definition, Formula, and Example](https://www.statology.org/two-sample-t-test/)
-- Blog: [Analysis of Variance (ANOVA) Guide with Examples](https://www.resonio.com/market-research/analysis-of-variance-anova/)
-- Blog: [Analysis of Variance Tutorial](https://stattrek.com/tutorials/anova-tutorial)
-- Blog: [Chi-Square test](https://datatab.net/tutorial/chi-square-test)
-- Blog: [Chi-Square (Χ²) Tests | Types, Formula & Examples](https://www.scribbr.com/statistics/chi-square-tests/)
-- Blog: [Chi-Square Test of Independence | Formula, Guide & Examples](https://www.scribbr.com/statistics/chi-square-test-of-independence/)
-- Blog: [Mann-Whitney U-Test](https://datatab.net/tutorial/mann-whitney-u-test)
-- Blog: [The Mann-Whitney U Test](https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf)
-- Blog: [How to Conduct a Wilcoxon Signed Rank Test](https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html)
-- Blog: [Wilcoxon signed-rank test](https://datatab.net/tutorial/wilcoxon-test)
-- Blog: [Kruskal-Wallis-Test](https://datatab.net/tutorial/kruskal-wallis-test)
+- Blog: <a href="https://www.originlab.com/doc/Origin-Help/tTest-TwoSample" target="_blank" rel="noopener noreferrer">Two-Sample T-Test</a>
+- Blog: <a href="https://www.jmp.com/en/statistics-knowledge-portal/t-test/two-sample-t-test" target="_blank" rel="noopener noreferrer">The Two-Sample t-Test</a>
+- Blog: <a href="https://www.statology.org/two-sample-t-test/" target="_blank" rel="noopener noreferrer">Two Sample t-test: Definition, Formula, and Example</a>
+- Blog: <a href="https://www.resonio.com/market-research/analysis-of-variance-anova/" target="_blank" rel="noopener noreferrer">Analysis of Variance (ANOVA) Guide with Examples</a>
+- Blog: <a href="https://stattrek.com/tutorials/anova-tutorial" target="_blank" rel="noopener noreferrer">Analysis of Variance Tutorial</a>
+- Blog: <a href="https://datatab.net/tutorial/chi-square-test" target="_blank" rel="noopener noreferrer">Chi-Square test</a>
+- Blog: <a href="https://www.scribbr.com/statistics/chi-square-tests/" target="_blank" rel="noopener noreferrer">Chi-Square (Χ²) Tests | Types, Formula & Examples</a>
+- Blog: <a href="https://www.scribbr.com/statistics/chi-square-test-of-independence/" target="_blank" rel="noopener noreferrer">Chi-Square Test of Independence | Formula, Guide & Examples</a>
+- Blog: <a href="https://datatab.net/tutorial/mann-whitney-u-test" target="_blank" rel="noopener noreferrer">Mann-Whitney U-Test</a>
+- Blog: <a href="https://www.statstutor.ac.uk/resources/uploaded/mannwhitney.pdf" target="_blank" rel="noopener noreferrer">The Mann-Whitney U Test</a>
+- Blog: <a href="https://study.com/skill/learn/how-to-conduct-a-wilcoxon-signed-rank-test-explanation.html" target="_blank" rel="noopener noreferrer">How to Conduct a Wilcoxon Signed Rank Test</a>
+- Blog: <a href="https://datatab.net/tutorial/wilcoxon-test" target="_blank" rel="noopener noreferrer">Wilcoxon signed-rank test</a>
+- Blog: <a href="https://datatab.net/tutorial/kruskal-wallis-test" target="_blank" rel="noopener noreferrer">Kruskal-Wallis-Test</a>

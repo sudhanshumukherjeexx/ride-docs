@@ -7,10 +7,9 @@ The **EDA Panel** helps users visualize patterns, distributions, and relationshi
 
 `Recommended Reading`
 
-- Blog: [How to choose the right data visualization](https://www.atlassian.com/data/charts/how-to-choose-data-visualization)
-- Blog: [A Complete Guide to Python Data Visualization](https://www.datylon.com/blog/a-complete-guide-to-python-data-visualization#:~:text=Python%20libraries%20excel%20in%20providing,like%20Pandas%20and%20NumPy%20possible.)
-- Blog: [Types of Plots: Visualization from Concept to Code](https://www.analyticsvidhya.com/blog/2021/12/12-data-plot-types-for-visualization/)
-
+- Blog: <a href="https://www.atlassian.com/data/charts/how-to-choose-data-visualization" target="_blank" rel="noopener noreferrer">How to choose the right data visualization</a>
+- Blog: <a href="https://www.datylon.com/blog/a-complete-guide-to-python-data-visualization#:~:text=Python%20libraries%20excel%20in%20providing,like%20Pandas%20and%20NumPy%20possible." target="_blank" rel="noopener noreferrer">A Complete Guide to Python Data Visualization</a>
+- Blog: <a href="https://www.analyticsvidhya.com/blog/2021/12/12-data-plot-types-for-visualization/" target="_blank" rel="noopener noreferrer">Types of Plots: Visualization from Concept to Code</a>
 ---
 ### 🧭 **User Workflow**
 
@@ -98,6 +97,6 @@ While this panel does not directly use GPT, it is fully compatible with previous
 
 ### Recommended Reading
 
-- Blog: [How to choose the right data visualization](https://www.atlassian.com/data/charts/how-to-choose-data-visualization)
-- Blog: [A Complete Guide to Python Data Visualization](https://www.datylon.com/blog/a-complete-guide-to-python-data-visualization#:~:text=Python%20libraries%20excel%20in%20providing,like%20Pandas%20and%20NumPy%20possible.)
-- Blog: [Types of Plots: Visualization from Concept to Code](https://www.analyticsvidhya.com/blog/2021/12/12-data-plot-types-for-visualization/)
+- Blog: <a href="https://www.atlassian.com/data/charts/how-to-choose-data-visualization" target="_blank" rel="noopener noreferrer">How to choose the right data visualization</a>
+- Blog: <a href="https://www.datylon.com/blog/a-complete-guide-to-python-data-visualization#:~:text=Python%20libraries%20excel%20in%20providing,like%20Pandas%20and%20NumPy%20possible." target="_blank" rel="noopener noreferrer">A Complete Guide to Python Data Visualization</a>
+- Blog: <a href="https://www.analyticsvidhya.com/blog/2021/12/12-data-plot-types-for-visualization/" target="_blank" rel="noopener noreferrer">Types of Plots: Visualization from Concept to Code</a>

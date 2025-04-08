@@ -8,9 +8,9 @@ This panel allows users to handle missing values in their dataset using **nine d
 
 `Recommended Reading`
 
-- Kaggle Notebook: [A Guide to Handling Missing values in Python](https://www.kaggle.com/code/parulpandey/a-guide-to-handling-missing-values-in-python)
-- Pandas Official Documentation: [Work with Missing Data](https://pandas.pydata.org/docs/user_guide/missing_data.html)
-- Blog: [Top Techniques to Handle Missing Values Every Data Scientist Should Know](https://www.datacamp.com/tutorial/techniques-to-handle-missing-data-values)
+- Kaggle Notebook: <a href="https://www.kaggle.com/code/parulpandey/a-guide-to-handling-missing-values-in-python" target="_blank" rel="noopener noreferrer">A Guide to Handling Missing values in Python</a>
+- Pandas Official Documentation: <a href="https://pandas.pydata.org/docs/user_guide/missing_data.html" target="_blank" rel="noopener noreferrer">Work with Missing Data</a>
+- Blog: <a href="https://www.datacamp.com/tutorial/techniques-to-handle-missing-data-values" target="_blank" rel="noopener noreferrer">Top Techniques to Handle Missing Values Every Data Scientist Should Know</a>
 
 ---
 ### 🧭 **User Workflow**
@@ -64,6 +64,6 @@ This panel allows users to handle missing values in their dataset using **nine d
 
 ### Recommended Reading
 
-- Kaggle Notebook: [A Guide to Handling Missing values in Python](https://www.kaggle.com/code/parulpandey/a-guide-to-handling-missing-values-in-python)
-- Pandas Official Documentation: [Work with Missing Data](https://pandas.pydata.org/docs/user_guide/missing_data.html)
-- Blog: [Top Techniques to Handle Missing Values Every Data Scientist Should Know](https://www.datacamp.com/tutorial/techniques-to-handle-missing-data-values)
+- Kaggle Notebook: <a href="https://www.kaggle.com/code/parulpandey/a-guide-to-handling-missing-values-in-python" target="_blank" rel="noopener noreferrer">A Guide to Handling Missing values in Python</a>
+- Pandas Official Documentation: <a href="https://pandas.pydata.org/docs/user_guide/missing_data.html" target="_blank" rel="noopener noreferrer">Work with Missing Data</a>
+- Blog: <a href="https://www.datacamp.com/tutorial/techniques-to-handle-missing-data-values" target="_blank" rel="noopener noreferrer">Top Techniques to Handle Missing Values Every Data Scientist Should Know</a>

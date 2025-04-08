@@ -11,11 +11,11 @@ This panel allows users to **normalize, standardize, or transform features** for
 
 `Recommended Reading`
 
-- Blog: [When to perform scaling](https://www.atoti.io/articles/when-to-perform-a-feature-scaling/#:~:text=What%20is%20Feature%20Scaling%3F,during%20the%20data%20preprocessing%20step.)
-- Blog: [About Feature Scaling and Normalization](https://sebastianraschka.com/Articles/2014_about_feature_scaling.html#:~:text=shouldn't%20hurt.-,About%20Min%2DMax%20scaling,range%20%2D%20usually%200%20to%201.)
-- Blog: [Feature Scaling: Engineering, Normalization, and Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
-- Blog: [Feature Transformation- Part of Feature Engineering](https://medium.com/@datasciencejourney100_83560/feature-transformation-part-of-feature-engineering-dff2deaf59a2)
-- Kaggle Notebook: [All about Feature Transformation](https://www.kaggle.com/code/nargisbegum82/all-about-feature-transformation)
+- Blog: <a href="https://www.atoti.io/articles/when-to-perform-a-feature-scaling/#:~:text=What%20is%20Feature%20Scaling%3F,during%20the%20data%20preprocessing%20step." target="_blank" rel="noopener noreferrer">When to perform scaling</a>
+- Blog: <a href="https://sebastianraschka.com/Articles/2014_about_feature_scaling.html#:~:text=shouldn't%20hurt.-,About%20Min%2DMax%20scaling,range%20%2D%20usually%200%20to%201." target="_blank" rel="noopener noreferrer">About Feature Scaling and Normalization</a>
+- Blog: <a href="https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/" target="_blank" rel="noopener noreferrer">Feature Scaling: Engineering, Normalization, and Standardization</a>
+- Blog: <a href="https://medium.com/@datasciencejourney100_83560/feature-transformation-part-of-feature-engineering-dff2deaf59a2" target="_blank" rel="noopener noreferrer">Feature Transformation- Part of Feature Engineering</a>
+- Kaggle Notebook: <a href="https://www.kaggle.com/code/nargisbegum82/all-about-feature-transformation" target="_blank" rel="noopener noreferrer">All about Feature Transformation</a>
 
 
 ---
@@ -67,10 +67,10 @@ This panel allows users to **normalize, standardize, or transform features** for
 | **Robust Scaler**             | Uses IQR (Q3 - Q1), ignores outliers. | When outliers are present and shouldn't dominate scaling.  |
 | **Max AbsScaler**             | Scales by max absolute value.         | When dealing with **sparse** data (e.g., TF-IDF).          |
 
-- Min-Max Scaling: [How Min-Max Scaler Works](https://medium.com/@iamkamleshrangi/how-min-max-scaler-works-9fbebb9347da)
-- Standardization(z-score): [z-Score](https://datatab.net/tutorial/z-score)
-- Robust Scaling: [Robust Scaling: Why and How to Use It to Handle Outliers](https://proclusacademy.com/blog/robust-scaler-outliers/)
-- Max AbsScaler: [Using Max Abs Scaler for feature scaling | Machine Learning](https://www.youtube.com/watch?v=RbFkTonj1lg)
+- Min-Max Scaling: <a href="https://medium.com/@iamkamleshrangi/how-min-max-scaler-works-9fbebb9347da" target="_blank" rel="noopener noreferrer">How Min-Max Scaler Works</a>
+- Standardization(z-score): <a href="https://datatab.net/tutorial/z-score" target="_blank" rel="noopener noreferrer">z-Score</a>
+- Robust Scaling: <a href="https://proclusacademy.com/blog/robust-scaler-outliers/" target="_blank" rel="noopener noreferrer">Robust Scaling: Why and How to Use It to Handle Outliers</a>
+- Max AbsScaler: <a href="https://www.youtube.com/watch?v=RbFkTonj1lg" target="_blank" rel="noopener noreferrer">Using Max Abs Scaler for feature scaling | Machine Learning</a>
 
 ### 🔄 Feature Transformation
 
@@ -81,7 +81,7 @@ This panel allows users to **normalize, standardize, or transform features** for
 |**Power Transformer (Box-Cox)**|Normalizes data using λ parameter.|Positive-only data with non-normal shape.|
 |**Power Transformer (Yeo-Johnson)**|Modified Box-Cox, supports negatives.|Mixed-sign numeric data needing normalization.|
 
-- Quantile Transformer, Power Transformer and Log Transform: [5 Data Transformers to know from Scikit-Learn](https://medium.com/data-science/5-data-transformers-to-know-from-scikit-learn-612bc48b8c89#:~:text=Quantile%20Transformer,Gaussian%20Distribution%20(Normal%20Distribution)) 
+- Quantile Transformer, Power Transformer and Log Transform: <a href="https://medium.com/data-science/5-data-transformers-to-know-from-scikit-learn-612bc48b8c89#:~:text=Quantile%20Transformer,Gaussian%20Distribution%20(Normal%20Distribution)" target="_blank" rel="noopener noreferrer">5 Data Transformers to know from Scikit-Learn</a> 
 
 ---
 ## 🧠 Why This Panel Matters
@@ -93,8 +93,8 @@ This panel allows users to **normalize, standardize, or transform features** for
 
 ### Recommended Reading
 
-- Blog: [When to perform scaling](https://www.atoti.io/articles/when-to-perform-a-feature-scaling/#:~:text=What%20is%20Feature%20Scaling%3F,during%20the%20data%20preprocessing%20step.)
-- Blog: [About Feature Scaling and Normalization](https://sebastianraschka.com/Articles/2014_about_feature_scaling.html#:~:text=shouldn't%20hurt.-,About%20Min%2DMax%20scaling,range%20%2D%20usually%200%20to%201.)
-- Blog: [Feature Scaling: Engineering, Normalization, and Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
-- Blog: [Feature Transformation- Part of Feature Engineering](https://medium.com/@datasciencejourney100_83560/feature-transformation-part-of-feature-engineering-dff2deaf59a2)
-- Kaggle Notebook: [All about Feature Transformation](https://www.kaggle.com/code/nargisbegum82/all-about-feature-transformation)
+- Blog: <a href="https://www.atoti.io/articles/when-to-perform-a-feature-scaling/#:~:text=What%20is%20Feature%20Scaling%3F,during%20the%20data%20preprocessing%20step." target="_blank" rel="noopener noreferrer">When to perform scaling</a>
+- Blog: <a href="https://sebastianraschka.com/Articles/2014_about_feature_scaling.html#:~:text=shouldn't%20hurt.-,About%20Min%2DMax%20scaling,range%20%2D%20usually%200%20to%201." target="_blank" rel="noopener noreferrer">About Feature Scaling and Normalization</a>
+- Blog: <a href="https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/" target="_blank" rel="noopener noreferrer">Feature Scaling: Engineering, Normalization, and Standardization</a>
+- Blog: <a href="https://medium.com/@datasciencejourney100_83560/feature-transformation-part-of-feature-engineering-dff2deaf59a2" target="_blank" rel="noopener noreferrer">Feature Transformation- Part of Feature Engineering</a>
+- Kaggle Notebook: <a href="https://www.kaggle.com/code/nargisbegum82/all-about-feature-transformation" target="_blank" rel="noopener noreferrer">All about Feature Transformation</a>
